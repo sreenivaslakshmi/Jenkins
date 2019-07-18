@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="cucumber" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="stepdefinition.TestRunner" time="24.646">
+    <testsuite name="Feature: To test add triff plan functionality" time="24.646">
+      <testcase name="To verify the error message" classname="To test add triff plan functionality" time="24.646">
+        <error>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : please fill all fields Correct Value}
+  (Session info: chrome=75.0.3770.142): 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-81RIDV8', ip: '192.168.43.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 09c44ba13493e48cb965c87989065529
+*** Element info: {Using=tag name, value=h2}&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)&#13;
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at stepdefinition.steps.the_user_should_see_the_error_message(steps.java:61)&#13;
+	at ✽.the user should see the error message(src/main/resources/feature/Add triff plan functionality.feature:21)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

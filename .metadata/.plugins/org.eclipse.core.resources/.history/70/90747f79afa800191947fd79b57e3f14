@@ -1,0 +1,41 @@
+package stepdefinition;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class steps {
+
+	public static void main(String[] args) {
+		static WebDriver driver();
+		
+@Given("the user is in add triff plan pag")
+public void the_user_is_in_add_triff_plan_pag() {
+	System.setProperty("webdriver.chrome.driver", "E:\\lakshmi mathu\\practice\\cucumber\\driver\\chromedriver.exe");
+	driver = new ChromeDriver();
+}
+
+@When("the user fill in valid tariff plan details{string},{string},{string},{string},{string},{string},{string}")
+public void the_user_fill_in_valid_tariff_plan_details(String string, String string2, String string3, String string4, String string5, String string6, String string7) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@When("the user clicks submit button in add tariff plan pag")
+public void the_user_clicks_submit_button_in_add_tariff_plan_pag() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("the user should see the sucess message")
+public void the_user_should_see_the_sucess_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+
+	}
+
+}

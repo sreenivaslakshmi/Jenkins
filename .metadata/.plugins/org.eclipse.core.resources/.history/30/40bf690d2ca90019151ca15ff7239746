@@ -1,0 +1,49 @@
+package stepdefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class steps {
+	static WebDriver driver;
+	
+@Given("the user is in add triff plan pag")
+public void the_user_is_in_add_triff_plan_pag() {
+	System.setProperty("webdriver.chrome.driver", "E:\\lakshmi mathu\\practice\\cucumber\\driver\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.get("http://demo.guru99.com/telecom/addtariffplans.php");
+}
+
+@When("the user fill in valid tariff plan details{string},{string},{string},{string},{string},{string},{string}")
+public void the_user_fill_in_valid_tariff_plan_details(String MonthRent, String FreeLocal, String FreeInt,
+		String FreeSMS, String LocalCharges, String Intercharges, String SMScharges) 
+{
+	driver.findElement(By.id("rental1")).sendKeys(MonthRent);
+	driver.findElement(By.id("local_minutes")).sendKeys(FreeLocal);
+	driver.findElement(By.id("inter_minutes")).sendKeys(FreeInt);
+	driver.findElement(By.id("sms_pack")).sendKeys(FreeSMS);
+	driver.findElement(By.id("minutes_charges")).sendKeys(LocalCharges);
+	driver.findElement(By.id("inter_charges")).sendKeys(Intercharges);
+	driver.findElement(By.id("sms_charges")).sendKeys(SMScharges);
+	
+	
+}
+
+@When("the user clicks submit button in add tariff plan pag")
+public void the_user_clicks_submit_button_in_add_tariff_plan_pag() {
+driver.findElement(By.name("submit")).click();
+}
+
+@Then("the user should see the sucess message")
+public void the_user_should_see_the_sucess_message() {
+
+	Assert.assertTrue(driver.findElement(By.tagName("h2")).isDisplayed());
+}
+	
+}
+

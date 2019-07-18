@@ -1,0 +1,12 @@
+#Author: your.email@your.domain.com
+
+
+Feature: To test add triff plan functionality
+
+  Scenario Outline: To verify the sucess message
+    Given the user is in add triff plan pag
+    When the user fill in valid tariff plan details"<MonthRent>","<FreeLocal>","<FreeInt>","<FreeSMS>","<LocalCharges>","<Intercharges>","<SMScharges>"
+    And the user clicks submit button in add tariff plan pag
+    Then the user should see the sucess message
+
+   

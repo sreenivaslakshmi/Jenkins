@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="cucumber" tests="4" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="stepdefinition.TestRunner" time="0.083">
+    <testsuite name="Feature: To test add triff plan functionality" time="0.083">
+      <testcase name="To verify the sucess message" classname="To test add triff plan functionality" time="0.001">
+        <skipped>cucumber.runtime.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="To verify the sucess message" classname="To test add triff plan functionality" time="0.0">
+        <skipped>cucumber.runtime.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="To verify the sucess message" classname="To test add triff plan functionality" time="0.0">
+        <skipped>cucumber.runtime.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="To verify the error message" classname="To test add triff plan functionality" time="0.003">
+        <error>cucumber.runtime.junit.UndefinedThrowable: The step "the user fill in blank tariff plan details"","","","","","",""" is undefined&#13;
+&#13;
+cucumber.runtime.junit.UndefinedThrowable: The step "the user should see the error message" is undefined&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
